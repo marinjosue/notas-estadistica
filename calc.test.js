@@ -19,7 +19,7 @@ test('devuelve una lista utilizando el metodo mas cercano(sin interpolacion)', (
     const scores = [50, 60, 70, 80, 90];
     expect(percentile(75, scores)).toBeCloseTo(80);
     
-    expect(percentile(0, [1, 2, 3])).toBeCloseTo(4.00);
-    expect(percentile(100, [1, 2, 3])).toBeCloseTo(1.00);
+    expect(percentile(0, [1, 2, 3])).toBeCloseTo(1.00);
+    expect(percentile(100, [1, 2, 3])).toBeCloseTo(3.00);
     expect(percentile(50, [1, 2, 3, 4])).toBeCloseTo(2.00);
 });
